@@ -1,18 +1,27 @@
 <head>
   <script type="text/javascript" src="//code.jquery.com/jquery-1.12.0.min.js"></script>
   <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
-  <script type="text/javascript" src="js.js"></script>
+  <script src="static/js/typed.js"></script>
   <link rel="stylesheet" type="text/css" href="static/css/css.css">
   <link rel="stylesheet" type="text/css" href="static/css/animate.css">
   <link href='http://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
   <title>HW Venture</title>
 </head>
 <body>
+  <script>
+  $(function(){
+      $(".element").typed({
+        strings: ["First sentence.", "Second sentence."],
+        typeSpeed: 0
+      });
+  });
+  </script>
   <center>
     <div id=kcbackground class="animated fadeIn">
     <img id=logo class="animate lightSpeedIn" src=static/images/hwventure.png>
     <br>
     <div id=info>
+      <div class=element></div>
       <div>The world is big. Our minds are bright. Imagine what we could do if we all worked together.</div>
       <div style=font-size:20;>&nbsp;</div>
       <div style=font-size:30;>Join us for our inaugural meeting of HW Venture on May 16 at 3:15 PM.</div>
@@ -20,8 +29,4 @@
       <div><button id=button type="reset" onclick="location.href='thebeginning.html'">Tell me more about this "HW Venture"</button></div>
     </div>
   </center>
-  <br>
-  <div class=main>
-    <!-- Put Text here eventually -->
-  </div>
 </body>
