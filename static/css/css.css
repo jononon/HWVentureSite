@@ -7,7 +7,11 @@ iframe {
 }
 
 #logo {
-  width: 100%;
+  display: block;
+  max-width:100%;
+  max-height:70%;
+  width: auto;
+  height: auto;
 }
 
 #kcbackground {
@@ -21,6 +25,25 @@ iframe {
   -o-background-size: cover;
   background-size: cover;
 
+}
+
+#info {
+  margin-left: 10%;
+  margin-right:10%;
+  font-size: 30;
+  font-size: 2.5em;
+  font-size: 3vw;
+}
+
+#button {
+  background-color: #900;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
 }
 
 .main {
