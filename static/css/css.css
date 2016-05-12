@@ -10,12 +10,12 @@ iframe {
   width: 100%;
 }
 
-#title {
+#kcbackground {
 
   width: 100%;
   height: 100%;
 
-  background-image: url(kc.jpg);
+  background-image: url(../images/kc.jpg);
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
