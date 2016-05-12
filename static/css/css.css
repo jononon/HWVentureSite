@@ -28,9 +28,14 @@ iframe {
 }
 
 #info {
+  margin-left: 15%;
+  margin-right:15%;
+  font-size: 50;
+}
+
+.thinmargin {
   margin-left: 10%;
   margin-right:10%;
-  font-size: 50;
 }
 
 #button {
