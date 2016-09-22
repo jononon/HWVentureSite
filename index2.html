@@ -1,204 +1,87 @@
 <head>
-  <script src="static/js/jquery-2.1.4.min.js"></script>
-  <script type="text/javascript" src=""></script>
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+  <script type="text/javascript" src="http://code.jquery.com/ui/1.10.2/jquery-ui.js"></script>
   <script src="static/js/typed.js"></script>
   <script src="bootstrap/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" type="text/css" href="static/css/css.css">
   <link rel="stylesheet" type="text/css" href="static/css/animate.css">
   <link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.min.css">
   <link href='http://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
   <link href='https://fonts.googleapis.com/css?family=Roboto+Mono' rel='stylesheet' type='text/css'>
-  <link rel="stylesheet" type="text/css" href="static/css/css.css">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>HW Venture</title>
 </head>
 <body>
-  <div id=kcbackground class="animated fadeIn">
-  </div>
-  <nav class="navbar navbar-default">
-    <div class="container-fluid">
-      <div class="navbar-header">
-        <a class="navbar-brand" href="#">
-          <div>
-          <img alt="Brand" src="static/images/HW.png" style="height:100%;align:left;"> Venture
-          </div>
-        </a>
-      </div>
-      <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-        <form class="navbar-form navbar-right">
-          <div class="btn-group" role="group" aria-label="...">
-            <button type="button" class="btn btn-default" onclick="location.href='https://goo.gl/forms/AVMF1pTKjRn5IqvY2'">Join</button>
-            <button type="button" class="btn btn-default" onclick="location.href='https://goo.gl/forms/76CnOrKfWTrFw5qs1'">Lead</button>
-          </div>
-        </form>
-      </div>
+  <script>
+    $(function(){
+        $(".buzzwords").typed({
+          strings: [
+            "Incubator",
+            "School Hacks/LA Problems",
+            "Speakers",
+            "Site Visits",
+            "Summer Program Connections",
+            "Consulting Teams",
+            "Mentorships",
+            "Connections Across HW",
+            "Innovation",
+          ],
+          typeSpeed: 0,
+          backDelay: 1000,
+          loop: false,
+        });
+    });
+  </script>
+  <center>
+    <div id=kcbackground class="animated fadeIn">
+      <img id=logo class="animate lightSpeedIn" src=static/images/hwventure.png>
+      <br>
     </div>
-  </nav>
-      <div class="container-fluid">
+  </center>
+    <div id=info>
       <center>
-        <img id=logo class="animate lightSpeedIn" src=static/images/hwventure.png>
-        <br>
-        <img src=static/images/arrow2.png class="animate fadeIn img-reactive">
+        <img src=static/images/arrow.png class="animate fadeIn">
+        <div class="btn-group" role="group" aria-label="...">
+          <button type="button" class="btn btn-default" onclick="location.href='https://goo.gl/forms/AVMF1pTKjRn5IqvY2'">Join</button>
+          <button type="button" class="btn btn-default" onclick="location.href='https://goo.gl/forms/76CnOrKfWTrFw5qs1'">Lead</button>
+        </div>
       </center>
-      <div class="row">
-        <!--Ideation-->
-        <div class="col-md-3">
-          <div class="thumbnail">
-            <div class="caption">
-              <h3>Ideation</h3>
-              <p>Provide students with an environment to generate amazing ideas.</p>
-              <p>
-                <div class="btn-group-vertical" role="group" aria-label="...">
-                  <a class="btn btn-default" role="button" data-toggle="modal" data-target="#hackathonsModal">
-                    Hackathons
-                  </a>
-                  <a class="btn btn-default" role="button" data-toggle="modal" data-target="#lectureSeriesModal">
-                    Lecture Series
-                  </a>
-                  <a class="btn btn-default" role="button" data-toggle="modal" data-target="#fieldTripsModal">
-                    Field Trips
-                  </a>
-                  <a class="btn btn-default" role="button" data-toggle="modal" data-target="#megaEventModal">
-                    Mega Event
-                  </a>
-                </div>
-              </p>
-            </div>
-          </div>
+      <div class="venture-aspect">
+        <div class="page-header">
+          <h3>Field Trips <small></small></h3>
         </div>
+        <img src=static/images/fieldtrips.png class="venture-image">
+        <div class="venture-aspect-mission">
+          The Field Trip team hopes to bring Harvard-Westlake students to amazing places utilizing Harvard-Westlake's vast alumni network to help them see people pursuing their dreams. These ideas will hopefully spur ideas of their own to pursue within HW Venture. Our first field trip is being planned to SpaceX.
+        </div>
+      </div>
+      <div class="venture-aspect">
+        <div class="page-header">
+          <h3>Hackathons <small></small></h3>
+        </div>
+        <img src=static/images/hackathon.png class="venture-image">
+        <div class="venture-aspect-mission">
+          The role of the Hackathon team is to to host Hackathons for both Harvard-Westlake and the community. These are events focused around finding inventive solutions to important problems. During our first Hackathon of the year we will be brainstorming the problems that will be explored in future Hackathons.
+        </div>
+      </div>
+      <div class="venture-aspect">
+        <div class="page-header">
+          <h3>Mega-Event <small></small></h3>
+        </div>
+        <img src=static/images/megaevent.png class="venture-image">
+        <div class="venture-aspect-mission">
+          The Mega-Event team hopes to bring innovative ideas to Harvard-Westlake through a large conference with many speakers from a wide variety of backgrounds. We hope that this event will help generate ideas and cultivate interesting discussion across many disciplines. This event will be accessible to all and will help reinforce Harvard-Westlake position as an important part of Southern-California's entrepreneurial ecosystem.
+        </div>
+      </div>
+      <div class="venture-aspect">
+        <div class="page-header">
+          <h3>Lecture Series <small></small></h3>
+        </div>
+        <img src=static/images/lectureseries.png class="venture-image">
+        <div class="venture-aspect-mission">
+          The Lecture Series team is using the expansive network of Harvard-Westlake to bring inspiring speakers to Harvard-Westlake for lunches with students and recurring lectures throughout the school year. Lecturers will inspire students by exposing them to new cross-diciplinary ideas and going more in depth in many others.
+        </div>
+      </div>
+    </div>
 
-        <!--Incubation-->
-        <div class="col-md-3">
-          <div class="thumbnail">
-            <div class="caption">
-              <h3>Incubation</h3>
-              <p>Give students the resources to vet their ideas and begin developing them. </p>
-              <p>
-                <div class="btn-group-vertical" role="group" aria-label="...">
-                  <a class="btn btn-default" role="button" data-toggle="collapse" href="#test" aria-expanded="false" aria-controls="test">
-                    HW Inc
-                  </a>
-                </div>
-              </p>
-            </div>
-          </div>
-        </div>
-
-        <!--Acceleration-->
-        <div class="col-md-3">
-          <div class="thumbnail">
-            <div class="caption">
-              <h3>Realization</h3>
-              <p>Provide students with the guided direction they need to mature their ideas.</p>
-              <p>
-                <div class="btn-group-vertical" role="group" aria-label="...">
-                  <a class="btn btn-default" role="button" data-toggle="collapse" href="#test" aria-expanded="false" aria-controls="test">
-                    Noname Ventures
-                  </a>
-                  <a class="btn btn-default" role="button" data-toggle="collapse" href="#test" aria-expanded="false" aria-controls="test">
-                    RocketPad
-                  </a>
-                </div>
-              </p>
-            </div>
-          </div>
-        </div>
-
-        <!--Realisation-->
-        <div class="col-md-3">
-          <div class="thumbnail">
-            <div class="caption">
-              <h3>Commercialization</h3>
-              <p>Allow students to have access to the funds they need to bring their finished idea to the world.</p>
-              <p>
-                <div class="btn-group-vertical" role="group" aria-label="...">
-                  <a class="btn btn-default" role="button" data-toggle="collapse" href="#test" aria-expanded="false" aria-controls="test">
-                    Venture Wings
-                  </a>
-                </div>
-              </p>
-            </div>
-          </div>
-        </div>
-      </div>
-  </div>
-  <div class="modal fade" id="fieldTripsModal" tabindex="-1" role="dialog" aria-labelledby="fieldTripsModalLabel">
-    <div class="modal-dialog modal-lg" role="document">
-      <div class="modal-content">
-        <div class="modal-header">
-          <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-          <h4 class="modal-title" id="fieldTripsModalLabel">Field Trips</h4>
-        </div>
-        <div class="modal-body">
-          <div class=row>
-            <div class="col-md-6">
-              <a href="#" class="thumbnail"><img src="static/images/fieldtrips.png" alt="Field Trips Image"></a>
-            </div>
-            <div class="col-md-6">
-              The Field Trip team hopes to bring Harvard-Westlake students to amazing places utilizing Harvard-Westlake's vast alumni network to help them see people pursuing their dreams. These ideas will hopefully spur ideas of their own to pursue within HW Venture. Our first field trip is being planned to SpaceX.
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-  <div class="modal fade" id="hackathonsModal" tabindex="-1" role="dialog" aria-labelledby="hackathonsModalLabel">
-    <div class="modal-dialog modal-lg" role="document">
-      <div class="modal-content">
-        <div class="modal-header">
-          <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-          <h4 class="modal-title" id="hackathonsModalLabel">Hackathons</h4>
-        </div>
-        <div class="modal-body">
-          <div class=row>
-            <div class="col-md-6">
-              <a href="#" class="thumbnail"><img src="static/images/hackathon.png" alt="Hackathons Image"></a>
-            </div>
-            <div class="col-md-6">
-              The role of the Hackathon team is to to host Hackathons for both Harvard-Westlake and the community. These are events focused around finding inventive solutions to important problems. During our first Hackathon of the year we will be brainstorming the problems that will be explored in future Hackathons.
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-  <div class="modal fade" id="megaEventModal" tabindex="-1" role="dialog" aria-labelledby="megaEventModalLabel">
-    <div class="modal-dialog modal-lg" role="document">
-      <div class="modal-content">
-        <div class="modal-header">
-          <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-          <h4 class="modal-title" id="megaEventModalLabel">Mega Event</h4>
-        </div>
-        <div class="modal-body">
-          <div class=row>
-            <div class="col-md-6">
-              <a href="#" class="thumbnail"><img src="static/images/megaevent.png" alt="Mega Event Image"></a>
-            </div>
-            <div class="col-md-6">
-              The Mega-Event team hopes to bring innovative ideas to Harvard-Westlake through a large conference with many speakers from a wide variety of backgrounds. We hope that this event will help generate ideas and cultivate interesting discussion across many disciplines. This event will be accessible to all and will help reinforce Harvard-Westlake position as an important part of Southern-California's entrepreneurial ecosystem.
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-  <div class="modal fade" id="lectureSeriesModal" tabindex="-1" role="dialog" aria-labelledby="lectureSeriesModalLabel">
-    <div class="modal-dialog modal-lg" role="document">
-      <div class="modal-content">
-        <div class="modal-header">
-          <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-          <h4 class="modal-title" id="lectureSeriesModalLabel">Lecture Series</h4>
-        </div>
-        <div class="modal-body">
-          <div class=row>
-            <div class="col-md-6">
-              <a href="#" class="thumbnail"><img src="static/images/lectureseries.png" alt="Lecture Series Image"></a>
-            </div>
-            <div class="col-md-6">
-              The Lecture Series team is using the expansive network of Harvard-Westlake to bring inspiring speakers to Harvard-Westlake for lunches with students and recurring lectures throughout the school year. Lecturers will inspire students by exposing them to new cross-diciplinary ideas and going more in depth in many others.
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
 </body>
