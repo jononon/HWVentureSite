@@ -81,9 +81,16 @@
               <p>Give students the resources to vet their ideas and begin developing them. </p>
               <p>
                 <div class="btn-group-vertical" role="group" aria-label="...">
-                  <a class="btn btn-default" role="button" data-toggle="collapse" href="#test" aria-expanded="false" aria-controls="test">
-                    HW Inc
-                  </a>
+                  <div class="btn-group" role="group">
+                    <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                      HW Inc
+                      <span class="caret"></span>
+                    </button>
+                    <ul class="dropdown-menu">
+                      <li><a onclick="location.href='http://hwinc.co'">HW Inc Website</a></li>
+                      <li><a onclick="location.href='http://intrapreneursfilm.com/'">Intrapreneurs Documentary</a></li>
+                    </ul>
+                  </div>
                 </div>
               </p>
             </div>
@@ -98,10 +105,10 @@
               <p>Provide students with the guided direction they need to mature their ideas.</p>
               <p>
                 <div class="btn-group-vertical" role="group" aria-label="...">
-                  <a class="btn btn-default" role="button" data-toggle="collapse" href="#test" aria-expanded="false" aria-controls="test">
+                  <a class="btn btn-default" role="button" onclick="location.href='http://noname.ventures'">
                     Noname Ventures
                   </a>
-                  <a class="btn btn-default" role="button" data-toggle="collapse" href="#test" aria-expanded="false" aria-controls="test">
+                  <a class="btn btn-default" role="button" data-toggle="modal" data-target="#rocketpadModal">
                     RocketPad
                   </a>
                 </div>
@@ -118,7 +125,7 @@
               <p>Allow students to have access to the funds they need to bring their finished idea to the world.</p>
               <p>
                 <div class="btn-group-vertical" role="group" aria-label="...">
-                  <a class="btn btn-default" role="button" data-toggle="collapse" href="#test" aria-expanded="false" aria-controls="test">
+                  <a class="btn btn-default" role="button" data-toggle="modal" data-target="#ventureWingsModal">
                     Venture Wings
                   </a>
                 </div>
@@ -204,6 +211,38 @@
               The Lecture Series team is using the expansive network of Harvard-Westlake to bring inspiring speakers to Harvard-Westlake for lunches with students and recurring lectures throughout the school year. Lecturers will inspire students by exposing them to new cross-diciplinary ideas and going more in depth in many others.
             </div>
           </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="modal fade" id="rocketpadModal" tabindex="-1" role="dialog" aria-labelledby="rocketpadModalLabel">
+    <div class="modal-dialog modal-lg" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+          <h4 class="modal-title" id="rocketpadModalLabel">RocketPad</h4>
+        </div>
+        <div class="modal-body">
+          Coming soon to Southern California, RocketPad will essentially be a larger version of HW Inc. Participants will have about a month to work on their projects and the larger size of the program means that there will be more mentors and lecturers who can teach more disiplined material. This program was developed by Nick Abouzeid who is currently enjoying his second year at Babson College.
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" onclick="location.href='http://www.nickabouzeid.com/'">
+            Learn more about Nick Abouzeid <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="modal fade" id="ventureWingsModal" tabindex="-1" role="dialog" aria-labelledby="ventureWingsModalLabel">
+    <div class="modal-dialog modal-lg" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+          <h4 class="modal-title" id="rocketpadModalLabel">Venture Wings</h4>
+        </div>
+        <div class="modal-body">
+          <p>Venture Wings is the vescicle which will bring ideas into the world. This angel fund, supported by Harvard-Westlake alums, aims to fund great student ideas so they can become the next big thing.</p>
+          <p>Do you have what it takes?</p>
         </div>
       </div>
     </div>
